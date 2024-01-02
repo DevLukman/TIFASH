@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=Amaranth&family=Barlow&family=Bungee+Spice&family=Combo&family=Cookie&family=DM+Sans&family=Fira+Sans:wght@300&family=Fraunces:wght@300&family=Inter:wght@500&family=Josefin+Sans&family=Josefin+Slab:ital,wght@1,500&family=Kenia&family=Lato:ital,wght@0,300;0,400;1,400&family=League+Spartan:wght@300&family=Lobster&family=Lobster+Two&family=Nova+Square&family=Open+Sans:wght@300&family=Oranienbaum&family=Oswald:wght@200&family=PT+Sans+Narrow:wght@400;700&family=Passions+Conflict&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poltawski+Nowy:wght@400;500;600&family=Poppins:wght@300&family=Public+Sans:wght@100&family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oranienbaum', serif;
+}
+body{
+    background: #ffffffad;
+}
+
+/* GENERAL STYLINGS */
+img{
+    display: block;
+    max-width: 100%;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+/* HERO SECTION */
+#header{
+    width: 100%;
+    height: 100dvh;
+    background: url(/images/BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header-top{
+  
+    width: 100%;
+    padding: 1rem;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1.3rem;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #111;
+    text-transform: uppercase;
+    transition: 0.7s ease-in-out;
+}
+
+
+.right-nav{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+/* .one{
+    font-size: 9px;
+    color: #fff;
+    background: #ff0000;
+    padding: 4px;
+    border-radius: 100%;
+    position: absolute;
+    right: 392px;
+    top: 30px;
+    display: none;
+} */
+
+.login{
+    padding: 0.75rem 2rem;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border: 1px solid #111111ab;
+    background: transparent;
+    transition: 0.5s;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.login:hover{
+    background: #fff;
+    color: #111;
+}
+
+.hero-section{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.hero-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-left h1{
+     font-size: 5rem; 
+    color: #111;
+    text-transform: capitalize;
+    max-width: 450px;
+    font-weight: bolder;
+    word-spacing: 10px;
+    margin-bottom: 10px;
+    line-height: 78px;
+    font-family:'Frank Ruhl Libre' serif ;
+}
+.hero-left p{
+    max-width: 410px;
+    font-size: 1.5rem;
+    color: #111;
+    margin-top: 20px;
+    text-transform: capitalize;
+     font-family:'Frank Ruhl Libre' serif ;
+}
+
+.shop-now{
+    text-transform: uppercase;
+    margin-top: 35px;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    background: #34251f;
+    color: #fff;
+    box-shadow: 8px 6px 8px #34251f;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.shop-now:hover{
+    transform: scale(1.1);
+}
+.hero-right img{
+    max-width: 450px;
+    border-bottom-left-radius: 8.5rem;
+}
+
+.vector-1{
+    position: absolute;
+    right: 215px;
+    top: 270px;
+    z-index: 10;
+}
+
+.vector-2{
+  position: absolute;
+  top: 550px;
+  left: 1010px;
+}
+
+
+/* NEW COLLECTION */
+.collection{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.collection-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.collection-heading h1{
+    font-size: 5rem;
+    color: #111;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-shadow: 4px 4px 4px #808080;
+}
+.collection-heading p{
+    font-size: 1.8rem;
+    color: #111;
+}
+
+.collection-content{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collection-content-1{
+    position: relative;
+    padding: 1rem;
+    z-index: 10;
+}
+.collection-content-1 h3{
+    position: absolute;
+    bottom: 38px;
+    left: 40px;
+    background-color: white;
+    width: 80%;
+    text-align: center;
+    padding: 0.75rem;
+  
+   
+    text-transform: uppercase;
+    transition: 0.8s;
+}
+.collection-content-1 h3:hover{
+    transform: scale(1.1);
+}
+
+.collection-content-2{
+ width:85%;
+ margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collection-content-2-left img{
+    max-width: 450px;
+
+}
+
+.collection-content-2-right h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    max-width: 400px;
+    line-height:78px;
+}
+
+.collection-content-2-right p{
+    font-size: 1.6rem;
+    margin-top: 30px;
+    max-width: 440px;
+    line-height: 40px;
+}
+
+.showcase{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 8px 8px 10px gray;
+    padding: 1.5rem;
+    margin-top: 65px;
+    transform: translateX(-220px);
+    width: 100%;
+    gap: 2rem;
+}
+
+.showcase h2{
+    font-size: 2.3rem;
+   padding-bottom: 10px;
+}
+
+.showcase h4{
+    font-size: 1rem;
+    text-align: justify;
+    
+}
+
+.showcase .line{
+    width: 2px;
+    height: 65px;
+    background: #6c6a6ad0;
+}
+
+.vec{
+    position: absolute;
+   transform: translate(270px, -55px);
+   z-index: -1; 
+}
+
+.blur{
+    position: absolute;
+    transform: translate(200px, -150px);
+    width: 230px;
+    height: 225px;
+    background: #EEDDCC;
+    z-index: -2;
+}
+.vec2{
+    position: absolute;
+    transform: translate(-500px, 45px);
+  
+}
+
+
+/* BEST SELLING SECTION */
+.best-selling{
+    margin-top: 100px;
+    width: 100%;
+     background: url(/images/BG-selling.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+}
+.best-selling-content{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top: 60px;
+}
+.best-selling-left h1{
+    font-size: 4.5rem;
+    max-width: 400px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+}
+.best-selling-left p{
+    font-size: 1.5rem;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+}
+
+.best-selling-btn{
+    padding: 0.78rem 1.7rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.best-selling-btn:hover{
+    background: #fff;
+    color: #111;
+}
+.swiper-slide{
+    background: #fff;
+    padding-bottom: 1rem;
+} 
+
+.swiper-slide img{
+    width: 100%;
+    display: block;
+}
+
+.slide-content{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.slide-content i{
+    color: #FFB168;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.slide-content h4{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.slide-content .real{
+    font-size: 1.2rem;
+    color: #C20A0A;
+    margin-right: 12px;
+    text-decoration: line-through;
+}
+.slide-content .now{
+    font-size: 1.2rem;
+    color: #111;
+}
+
+.container-2{
+    max-width: 700px;
+}
+
+
+
+/* OUR PRODUCT */
+
+.our-product{
+    margin-top: 150px;
+}
+.products{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    grid-gap: 2rem;
+}
+.product-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.product-heading h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product-heading ul{
+    list-style: none;
+    display: flex;
+    gap: 2.2rem;
+    color: #111;
+}
+.product-heading ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: #111;
+}
+.product-heading .active{
+    border-bottom: 2.6px solid #111;
+}
+
+
+/* DEAL SECTION */
+
+.deal{
+    width: 100%;
+    margin-top: 120px;
+    text-transform: capitalize;
+}
+
+.deal .container{
+    padding: 3.3rem 9rem 0 9rem;
+    background: url(/images/Rectangle\ 144.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.deal-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #34251F;
+}
+
+.deal-content-left{
+    padding-bottom: 4rem;
+}
+
+
+.deal-content-left h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.deal-content-left p{
+    font-size: 1.5rem;
+    max-width: 530px;
+    line-height: 40px;
+}
+.deal-content-left .countdown{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.countdown h2{
+    font-size: 2.4rem;
+}
+.countdown h4{
+    font-size: 1.1rem;
+}
+
+.days, .hours, .mins{
+    background: #ffff;
+    padding: 1rem 2rem;
+}
+
+.deal-btn{
+    margin-top: 25px;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    background: #34251f;
+    color: white;
+}
+
+.backdrop{
+    background: linear-gradient(360deg, #eb8b47 -21.17%, rgba(215, 140, 86, 0) 115.88%);
+    position: absolute;
+    width: 370px;
+    height: 365px;
+    top: 4180px;
+    right:250px;
+    opacity: 0.2;
+}
+
+.deal-vector{
+    position: absolute;
+    top: 4500px;
+    right:350px;
+}
+
+
+/* REVIEWS */
+.reviews{
+    margin-top: 150px;
+    width: 100%;
+}
+
+.reviews-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reviews-heading h1{
+    margin-bottom: 20px;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.reviews-heading h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#swiper-2{
+    margin-top: 40px;
+   
+}
+#swiper-slide img{
+    max-width: 70px;
+}
+#swiper-slide{
+    padding: 3rem;
+    background: #eeddcce9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #111;
+    height: 370px;
+}
+
+#swiper-slide h1{
+    font-size: 1.4rem;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+#swiper-slide p{
+    font-size: 1.2rem;
+    max-width: 550px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.info h4{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+.info h5{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+
+
+/* DISPLAY SECTION */
+
+.display{
+    margin-top: 40px;
+}
+
+.display-content img{
+    width: 100%; 
+    padding: 0;
+}
+
+.display-content{
+    display: flex;
+    margin: 0;
+    gap: 0.3rem;
+}
+
+.instagram{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    transform: translate(600px, -60px);
+    background: #ffffff;
+    padding: 1.3rem 2rem;
+    width: 600px;
+    text-align: center;
+}
+
+.instagram p{
+    font-size: 1.2rem;
+}
+
+footer{
+    background: #34251F;
+    padding: 3.5rem;
+    height: 35dvh;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+.footer-content h4{
+    margin-top: 50px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.copyright{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+}
